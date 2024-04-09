@@ -200,7 +200,80 @@ section.tratamentos .container{
 }
 .tratamento-single p{
     font-size: 13px;
+    padding: 10px 0;
     color: #b4b4b4;
+}
+section.depoimentos h2{
+    font-size: 18px;
+    text-align: center;
+    color: #698293;
+}
+section.depoimentos .container{
+    padding: 40px 0;
+    max-width: 500px;
+}
+section.depoimentos .depoimento-single{
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+.depoimento-single quote{
+    font-size: 15px;
+
+    color: #b4b4b4;
+}
+.depoimento-single .nome-depoimento{
+    padding: 19px 0;
+}
+.nome-depoimento img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.nome-depoimento span{
+    font-size: 15px;
+    color: #4b4b4b;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    vertical-align: top;
+}
+.instagram-chamada{
+    float:left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #98a5ae;
+}
+.instagram-chamada p{
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+.mosaico-social{
+    float: left;
+    width: 100%;
+}
+.img-mosaico-social{
+    float: left;
+    width: calc(100% /9);
+    padding-top: calc(100% /9);
+    background-color: grey;
+    border: 6px solid white;
+}
+.facebook-chamada{
+    float:left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #576975;
+}
+.facebook-chamada p{
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
 }
 
 
@@ -208,6 +281,17 @@ section.tratamentos .container{
 
 
 
+@media screen and (max-width: 1024px){
+    .img-mosaico-social{
+        float: left;
+        width: calc(100% /6);
+        padding-top: calc(100% /6);
+        
+    }
+    .mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+}
 @media screen and (max-width: 768px){
     nav.menu-desktop{
         display: none;
@@ -215,6 +299,16 @@ section.tratamentos .container{
     header nav.menu-mobile{
         display: block;
     }
+    .img-mosaico-social{
+        float: left;
+        width: calc(100% /3);
+        padding-top: calc(100% /3);
+        
+    }
+    .mosaico-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 768px){
